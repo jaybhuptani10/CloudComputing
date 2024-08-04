@@ -1,35 +1,24 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
-function App() {
-  const [count, setCount] = useState(0)
-
+import React from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
+const App = () => {
+  const targetRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    ref: targetRef,
+  });
+  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-100%"]);
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div ref={targetRef} className="h-[300vh] relative bg-neutral-900 ">
+      <div className="sticky top-0 h-screen flex items-center overflow-hidden">
+        <motion.div style={{ x }} className="flex gap-0">
+          <div className="h-screen w-screen bg-red-600"></div>
+          <div className="h-screen w-screen bg-green-600"></div>
+          <div className="h-screen w-screen bg-blue-600"></div>
+          <div className="h-screen w-screen bg-gray-600"></div>
+        </motion.div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    </div>
+  );
+};
 
-export default App
+export default App;
