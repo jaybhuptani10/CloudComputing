@@ -2,6 +2,7 @@ import React from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import bgimg from "./assets/bgimg.png";
+import bubbles from "./assets/bubbles.png";
 import "./App.css"
 const App = () => {
   const targetRef = useRef(null);
@@ -14,7 +15,9 @@ const App = () => {
       <div className="sticky top-0 h-screen flex items-center overflow-hidden">
         <motion.div style={{ x }} className="flex gap-0 ">
           <div className="h-screen w-screen bg ">
-            <h1 className="text-white">Hello</h1>
+            <div>
+              <img className="z-10 h-full w-full" src={bubbles} alt="" />
+            </div>
           </div>
           <div className="h-screen w-screen bg2"></div>
           <div className="h-screen w-screen bg"></div>
