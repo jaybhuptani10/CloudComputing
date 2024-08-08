@@ -31,4 +31,9 @@ body,html{
 h1{
   font-size: 500px;
 }
-
+.up{
+  background-image: url("./Components/Verical/up.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
