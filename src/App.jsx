@@ -22,7 +22,7 @@ const App = () => {
   return (
     <div className="">
       <Vertical />
-      <div>
+      <div className="z-30">
         <motion.img
           initial="hidden"
           animate="visible"
@@ -33,7 +33,7 @@ const App = () => {
 
             top: `calc(${(offsetY / maxScrollHeight) * 100}%)`, // Adjust the position based on scroll progress
             width: "200px",
-            right: "10px",
+            left: "10px",
             zIndex: 30,
             transition: "top 1s ease", // Smooth transition for the movement
           }}

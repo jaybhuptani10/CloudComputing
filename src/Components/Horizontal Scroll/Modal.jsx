@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import IMG from "./map.png";
 
-const Modal = ({ num, openModal }) => {
+const Modal = ({ num, openModal, onHoverLeave }) => {
   const [img, setImg] = useState("");
 
   useEffect(() => {
@@ -19,7 +19,10 @@ const Modal = ({ num, openModal }) => {
   }, [num]); // Only re-run the effect if num changes
 
   return (
-    <div className="absolute top-0 transition-all delay-100 ">
+    <div
+      onMouseLeave={onHoverLeave}
+      className="absolute  h-80 w-96  z-30 top-0 transition-all delay-100 cursor-pointer "
+    >
       <img
         className={`w-full scale-150 h-full object-cover rounded-xl ${
           openModal ? "block" : "hidden"
