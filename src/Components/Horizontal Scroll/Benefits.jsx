@@ -22,13 +22,14 @@ const Benefits = () => {
         viewport={{ once: true, amount: 0.5 }}
       >
         <h1 className="text-2xl text-slate-100 text-center px-2 leading-6 absolute left-10 uppercase">
-          Environmental Factors
+          Sustainability
         </h1>
         <p className="text-[#344966] font-serif w-[70vw] font-semibold text-xl text-left px-5 absolute right-10">
-          The marine environment presents unique challenges such as biofouling
-          (marine organisms growing on the infrastructure), corrosion from
-          saltwater, and pressure due to depth. These factors can degrade
-          materials and components faster than in land-based data centers.
+          Project Natick is designed to be environmentally friendly. The
+          datacenters are powered by renewable energy sources, such as offshore
+          wind and tide, with no emissions or waste products. Additionally, they
+          are fully recyclable, reducing their environmental impact at the end
+          of their life cycle.
         </p>
       </motion.div>
 
@@ -40,14 +41,15 @@ const Benefits = () => {
         variants={sectionVariants}
         viewport={{ once: true, amount: 0.5 }}
       >
-        <h1 className="text-2xl text-slate-100 text-center px-2 leading-6 absolute left-10 uppercase">
-          Maintenance and Repairs
+        <h1 className="text-2xl  text-slate-100 text-center px-2 leading-6 absolute left-10 uppercase">
+          Improved Performance <br /> <span>and Reliability</span>
         </h1>
         <p className="text-[#344966] font-serif font-semibold text-xl text-left  w-[70vw] px-5 absolute right-10">
-          Since the data centers are underwater, they cannot be accessed for
-          routine maintenance or emergency repairs. This necessitates highly
-          reliable systems, as any failure could require a costly and
-          time-consuming retrieval and repair process.
+          Underwater datacenters like Natick have proven to be more reliable
+          than traditional land-based datacenters. The controlled underwater
+          environment and the use of nitrogen instead of oxygen in the vessel
+          reduce equipment failures significantly. The project has shown an
+          eightfold improvement in reliability compared to land datacenters.
         </p>
       </motion.div>
 
@@ -60,13 +62,12 @@ const Benefits = () => {
         viewport={{ once: true, amount: 0.5 }}
       >
         <h1 className="text-2xl text-slate-100 text-center px-2 leading-6 absolute left-10 uppercase">
-          Power and Data Connectivity
+          Rapid Deployment
         </h1>
         <p className="text-[#344966] font-serif font-semibold text-xl text-left  w-[70vw] px-5 absolute right-10">
-          The data centers require a stable power supply and high-speed data
-          connections. Although renewable energy sources (like tidal and wind)
-          can be used, ensuring consistent and reliable energy and connectivity
-          in the harsh marine environment is a challenge.
+          Natick datacenters can be deployed quickly, in less than 90 days,
+          allowing for a fast response to market demand. This rapid provisioning
+          is essential for businesses needing immediate scalability.
         </p>
       </motion.div>
 
@@ -79,12 +80,14 @@ const Benefits = () => {
         viewport={{ once: true, amount: 0.5 }}
       >
         <h1 className="text-2xl text-slate-100 text-center px-2 leading-6 absolute left-10  uppercase">
-          Logistics and Deployment
+          Lower Latency
         </h1>
         <p className="text-[#344966] font-serif font-semibold text-xl text-left  w-[70vw] px-5 absolute right-10">
-          Deploying and recovering the data centers involves complex logistics.
-          The deployment process must ensure the structure remains stable
-          underwater and is securely connected to power and data networks.
+          By placing datacenters close to coastal populations (where nearly half
+          of the world's population lives), Natick reduces data travel time,
+          thereby decreasing latency. This proximity enhances user experiences
+          for applications requiring low-latency, such as online gaming and
+          real-time data processing.
         </p>
       </motion.div>
 
@@ -97,12 +100,13 @@ const Benefits = () => {
         viewport={{ once: true, amount: 0.5 }}
       >
         <h1 className="text-2xl text-slate-100 text-center px-2 leading-6 absolute left-10 uppercase">
-          Long-Term Viability
+          Resource Efficiency
         </h1>
         <p className="text-[#344966] font-serif font-semibold text-xl text-left  w-[70vw] px-5 absolute right-10">
-          Understanding how these data centers perform over several years
-          without maintenance is still a key question. The durability of the
-          technology under long-term marine exposure remains uncertain.
+          The underwater environment offers natural cooling, eliminating the
+          need for water or additional cooling resources. This results in lower
+          energy consumption and a perfect water usage effectiveness (WUE) score
+          of zero.
         </p>
       </motion.div>
     </div>

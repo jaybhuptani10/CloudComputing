@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Map from "./Map";
 
@@ -12,6 +12,8 @@ import Intro from "./Intro";
 import Features from "./Problems";
 import Problems from "./Problems";
 import Benefits from "./Benefits";
+import Phase1 from "./Phase1";
+import Phase1TimeLine from "./Phase1TimeLine";
 
 const Horizontal = () => {
   const targetRef = useRef(null);
@@ -21,8 +23,16 @@ const Horizontal = () => {
 
   const x = useTransform(scrollYProgress, [0, 1], ["20%", "-90%"]);
 
+  // Debugging: Log scrollYProgress and x values
+  useEffect(() => {
+    scrollYProgress.onChange((value) => {
+      console.log("scrollYProgress:", value);
+      console.log("x:", x.get());
+    });
+  }, [scrollYProgress, x]);
+
   return (
-    <div ref={targetRef} className="h-[200vh] relative bg2">
+    <div ref={targetRef} className="h-[200vh] relative bg-blue-900">
       <div className="sticky top-0 h-screen flex items-center overflow-hidden">
         <motion.div style={{ x }} className="flex gap-0 z-40">
           <div className="h-screen w-screen bg"></div>
@@ -47,6 +57,12 @@ const Horizontal = () => {
           </div>
           <div className="h-screen w-screen bg ">
             <Benefits />
+          </div>
+          <div className="h-screen w-screen bg2">
+            <Phase1 />
+          </div>
+          <div className="h-screen w-screen bg ">
+            <Phase1TimeLine />
           </div>
           <div className="h-screen w-screen bg2"></div>
         </motion.div>
