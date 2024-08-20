@@ -3,7 +3,7 @@ import road from "./Imgs/road.png";
 import submarine from "./Imgs/Submarine.png";
 import { animate, motion, useScroll, useTransform } from "framer-motion";
 
-const Phase1TimeLine = () => {
+const Phase2Timeline2 = () => {
   const { scrollYProgress } = useScroll();
   const [visible, setVisible] = useState(0);
 
@@ -55,11 +55,11 @@ const Phase1TimeLine = () => {
         }`}
       >
         <h1 className="text-2xl z-30 text-slate-100 text-center px-2 leading-6 uppercase">
-          Initial White Paper
+          Fabrication Complete
         </h1>
-        <p className="text-white text-md text-left w-[20vw] px-5 ml-2 z-30">
-          A Microsoft white paper comes to the attention of senior leaders. It
-          describes an underwater datacenter, powered by renewable ocean energy.
+        <p className="text-white text-md text-left w-[20vw] px-2 ml-1 z-30">
+          Fabrication of datacenter complete. All IT equipment installed and
+          tested. The vessel is shipped to Stromness, UK.
         </p>
       </div>
       <div
@@ -67,24 +67,24 @@ const Phase1TimeLine = () => {
           visible >= 2 ? "opacity-100" : "opacity-0"
         }`}
       >
-        <h1 className="text-2xl z-30 mt-7 text-slate-100 text-center px-2 leading-6 uppercase">
-          Project Natick Begins
+        <h1 className="text-2xl z-30  text-slate-100 text-center px-2 leading-6 uppercase">
+          Deployment
         </h1>
-        <p className="text-white text-md text-left w-[20vw] ml-5 z-30">
-          Project begins with kickoff meeting in Redmond.
+        <p className="text-white text-md text-left w-[20vw] ml-2 z-30">
+          The Natick Phase 2 vessel, "Northern Isles", was deployed at the
+          European Marine Energy Centre on June 1st, 2018.
         </p>
       </div>
       <div
-        className={`h-[13vw] rounded-xl p-2 w-[20vw] bg-green-600 z-30 absolute top-[9vw] bg-opacity-55 left-[40vw] flex flex-col gap-4 transition-opacity duration-300 ${
+        className={`h-[13vw] rounded-xl p-1 w-[20vw] bg-green-600 z-30 absolute top-[9vw] bg-opacity-55 left-[40vw] flex flex-col gap-1 transition-opacity duration-300 ${
           visible >= 3 ? "opacity-100" : "opacity-0"
         }`}
       >
-        <h1 className="text-2xl z-30 mt-7 text-slate-100 text-center px-2 leading-6 uppercase">
-          Project Natick Operational
+        <h1 className="text-2xl z-30 mt-2  text-slate-100 text-center px-2 leading-6 uppercase">
+          Operations
         </h1>
-        <p className="text-white text-md text-left w-[20vw] px-2 ml-5 z-30">
-          The Leona Philpot is christened and deployed off the coast of
-          California.
+        <p className="text-white mt-5 text-md text-left w-[20vw] px-1 ml-1  z-30">
+          Natick Northern Isles was used by more than 18 groups inside Microsoft
         </p>
       </div>
       <div
@@ -92,11 +92,13 @@ const Phase1TimeLine = () => {
           visible >= 4 ? "opacity-100" : "opacity-0"
         }`}
       >
-        <h1 className="text-2xl z-30 mt-7 text-slate-100 text-center px-2 leading-6 uppercase">
-          Testing
+        <h1 className="text-2xl z-30  text-slate-100 text-center px-2 leading-6 uppercase">
+          Pandemic Work
         </h1>
-        <p className="text-white text-md text-left w-[20vw] ml-5 z-30">
-          The Leona Philpot system is thoroughly tested and monitored.
+        <p className="text-white text-md text-left w-[20vw]  z-30">
+          Natick Northern Isles was re-tasked to provide additional resources
+          for COVID-19 vaccine research via Folding at Home and World Community
+          Grid
         </p>
       </div>
       <div
@@ -105,16 +107,15 @@ const Phase1TimeLine = () => {
         }`}
       >
         <h1 className="text-2xl z-30 text-slate-100 text-center px-2 leading-6 uppercase">
-          Project Natick returns to Redmond
+          Retrieval
         </h1>
         <p className="text-white text-md text-left w-[19vw] ml-2 z-30">
-          After a very successful series of tests, the Leona Philpot is lifted
-          out of the water and is brought back to Redmond for analysis and
-          refitting.
+          After more than 2 years at the bottom of the ocean, Natick Northern
+          Isles was retrieved for analysis.
         </p>
       </div>
     </div>
   );
 };
 
-export default Phase1TimeLine;
+export default Phase2Timeline2;

@@ -14,6 +14,11 @@ import Problems from "./Problems";
 import Benefits from "./Benefits";
 import Phase1 from "./Phase1";
 import Phase1TimeLine from "./Phase1TimeLine";
+import Phase2 from "./Phase2";
+import WhyUnderWater from "./WhyUnderWater";
+import Phase2Timeline from "./Phase2Timeline";
+import Phase2Timeline2 from "./Phase2Timeline2";
+import Covid from "./Covid";
 
 const Horizontal = () => {
   const targetRef = useRef(null);
@@ -21,24 +26,18 @@ const Horizontal = () => {
     ref: targetRef,
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["20%", "-90%"]);
+  const x = useTransform(scrollYProgress, [0.4, 1], ["20%", "-90%"]);
 
   // Debugging: Log scrollYProgress and x values
-  useEffect(() => {
-    scrollYProgress.onChange((value) => {
-      console.log("scrollYProgress:", value);
-      console.log("x:", x.get());
-    });
-  }, [scrollYProgress, x]);
 
   return (
-    <div ref={targetRef} className="h-[200vh] relative bg-blue-900">
+    <div ref={targetRef} className="h-[200vh] relative bg-blue-900 ">
       <div className="sticky top-0 h-screen flex items-center overflow-hidden">
         <motion.div style={{ x }} className="flex gap-0 z-40">
-          <div className="h-screen w-screen bg"></div>
+          {/* <div className="h-screen w-screen bg"></div>
           <div className="h-screen w-screen bg2"></div>
-          <div className="h-screen w-screen bg"></div>
-          <div className="h-screen w-screen bg2"></div>
+          <div className="h-screen w-screen bg"></div> */}
+          {/* <div className="h-screen w-screen bg2"></div> */}
           <div className="h-screen w-screen bg"></div>
           <div className="h-screen w-screen bg2 z-40">
             <Intro />
@@ -47,24 +46,39 @@ const Horizontal = () => {
             <Natick />
           </div>
           <div className="h-screen w-screen bg2">
-            <Page1 />
-          </div>
-          <div className="h-screen w-screen bg ">
-            <Diff />
-          </div>
-          <div className="h-screen w-screen bg2">
-            <Problems />
-          </div>
-          <div className="h-screen w-screen bg ">
-            <Benefits />
-          </div>
-          <div className="h-screen w-screen bg2">
             <Phase1 />
           </div>
           <div className="h-screen w-screen bg ">
             <Phase1TimeLine />
           </div>
-          <div className="h-screen w-screen bg2"></div>
+          <div className="h-screen w-screen bg2">
+            <Phase2 />
+          </div>
+          <div className="h-screen w-screen bg ">
+            <Phase2Timeline />
+          </div>
+          <div className="h-screen w-screen bg2">
+            <Phase2Timeline2 />
+          </div>
+          <div className="h-screen w-screen bg ">
+            <Diff />
+          </div>
+          <div className="h-screen w-screen bg2">
+            <Page1 />
+          </div>
+          <div className="h-screen w-screen bg">
+            <WhyUnderWater />
+          </div>
+          <div className="h-screen w-screen bg2">
+            <Benefits />
+          </div>
+          <div className="h-screen w-screen bg">
+            <Problems />
+          </div>
+          <div className="h-screen w-screen bg2">
+            <Covid />
+          </div>
+          <div className="h-screen w-screen bg"> </div>
         </motion.div>
       </div>
     </div>

@@ -3,7 +3,7 @@ import road from "./Imgs/road.png";
 import submarine from "./Imgs/Submarine.png";
 import { animate, motion, useScroll, useTransform } from "framer-motion";
 
-const Phase1TimeLine = () => {
+const Phase2Timeline = () => {
   const { scrollYProgress } = useScroll();
   const [visible, setVisible] = useState(0);
 
@@ -55,11 +55,12 @@ const Phase1TimeLine = () => {
         }`}
       >
         <h1 className="text-2xl z-30 text-slate-100 text-center px-2 leading-6 uppercase">
-          Initial White Paper
+          Phase 2 Planning
         </h1>
-        <p className="text-white text-md text-left w-[20vw] px-5 ml-2 z-30">
-          A Microsoft white paper comes to the attention of senior leaders. It
-          describes an underwater datacenter, powered by renewable ocean energy.
+        <p className="text-white text-md text-left w-[20vw] px-2 ml-1 z-30">
+          We had a few major goals in mind: make it full scale, deploy it deeper
+          and in harsher conditions, and power it with completely renewable
+          energy.
         </p>
       </div>
       <div
@@ -67,54 +68,58 @@ const Phase1TimeLine = () => {
           visible >= 2 ? "opacity-100" : "opacity-0"
         }`}
       >
-        <h1 className="text-2xl z-30 mt-7 text-slate-100 text-center px-2 leading-6 uppercase">
-          Project Natick Begins
+        <h1 className="text-2xl z-30  text-slate-100 text-center px-2 leading-6 uppercase">
+          Request for Information
         </h1>
-        <p className="text-white text-md text-left w-[20vw] ml-5 z-30">
-          Project begins with kickoff meeting in Redmond.
+        <p className="text-white text-md text-left w-[20vw] ml-2 z-30">
+          An RFI was issued seeking information about the feasibility of
+          deploying a Natick datacenter in the ocean powered by renewable
+          energy.
         </p>
       </div>
       <div
-        className={`h-[13vw] rounded-xl p-2 w-[20vw] bg-green-600 z-30 absolute top-[9vw] bg-opacity-55 left-[40vw] flex flex-col gap-4 transition-opacity duration-300 ${
+        className={`h-[13vw] rounded-xl p-1 w-[20vw] bg-green-600 z-30 absolute top-[9vw] bg-opacity-55 left-[40vw] flex flex-col gap-1 transition-opacity duration-300 ${
           visible >= 3 ? "opacity-100" : "opacity-0"
         }`}
       >
-        <h1 className="text-2xl z-30 mt-7 text-slate-100 text-center px-2 leading-6 uppercase">
-          Project Natick Operational
+        <h1 className="text-2xl z-30  text-slate-100 text-center px-2 leading-6 uppercase">
+          Request for Proposals
         </h1>
-        <p className="text-white text-md text-left w-[20vw] px-2 ml-5 z-30">
-          The Leona Philpot is christened and deployed off the coast of
-          California.
+        <p className="text-white text-md text-left w-[20vw] px-1 ml-1  z-30">
+          A select group of marine organizations was invited to present
+          proposals to realize our vision for Natick Phase 2.
         </p>
       </div>
       <div
-        className={`h-[13vw] rounded-xl p-2 w-[20vw] bg-yellow-600 z-30 absolute bottom-[5vw] bg-opacity-55 right-[25vw] flex flex-col gap-4 transition-opacity duration-300 ${
+        className={`h-[13vw] rounded-xl p-1 w-[20vw] bg-yellow-600 z-30 absolute bottom-[5vw] bg-opacity-55 right-[25vw] flex flex-col gap-1 transition-opacity duration-300 ${
           visible >= 4 ? "opacity-100" : "opacity-0"
         }`}
       >
-        <h1 className="text-2xl z-30 mt-7 text-slate-100 text-center px-2 leading-6 uppercase">
-          Testing
+        <h1 className="text-2xl z-30  text-slate-100 text-center px-2 leading-6 uppercase">
+          Naval Group Selected
         </h1>
-        <p className="text-white text-md text-left w-[20vw] ml-5 z-30">
-          The Leona Philpot system is thoroughly tested and monitored.
+        <p className="text-white text-md text-left w-[20vw] ml-1  z-30">
+          From a very strong field of proposals, we selected Naval Group and its
+          subsidiary, Naval Energies to lead design, fabrication, and deployment
+          of the Phase 2 datacenter.
         </p>
       </div>
       <div
-        className={`h-[13vw] rounded-xl p-2 w-[20vw] bg-gray-600 z-30 absolute top-[9vw] bg-opacity-55 right-[10vw] flex flex-col gap-2 transition-opacity duration-300 ${
+        className={`h-[13vw] rounded-xl p-2 w-[20vw] bg-gray-600 z-30 absolute top-[9vw] bg-opacity-55 right-[10vw] flex flex-col gap-0 transition-opacity duration-300 ${
           visible >= 5 ? "opacity-100" : "opacity-0"
         }`}
       >
-        <h1 className="text-2xl z-30 text-slate-100 text-center px-2 leading-6 uppercase">
-          Project Natick returns to Redmond
+        <h1 className="text-2xl z-30 text-slate-100 text-center px-1 leading-6 uppercase">
+          Design Complete
         </h1>
         <p className="text-white text-md text-left w-[19vw] ml-2 z-30">
-          After a very successful series of tests, the Leona Philpot is lifted
-          out of the water and is brought back to Redmond for analysis and
-          refitting.
+          We designed subsea equivalents of all elements typically found in a
+          land datacenter including networking, electrical and cooling systems,
+          environmental monitoring, and more.
         </p>
       </div>
     </div>
   );
 };
 
-export default Phase1TimeLine;
+export default Phase2Timeline;
