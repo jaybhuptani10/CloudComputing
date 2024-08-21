@@ -24,7 +24,7 @@ const Benefits = () => {
         <h1 className="text-2xl text-slate-100 text-center px-2 leading-6 absolute left-10 uppercase">
           Sustainability
         </h1>
-        <p className="text-[#344966] font-serif w-[70vw] font-semibold text-xl text-left px-5 absolute right-10">
+        <p className="text-[#000] font-serif w-[70vw] font-semibold text-xl text-left px-5 absolute right-10">
           Project Natick is designed to be environmentally friendly. The
           datacenters are powered by renewable energy sources, such as offshore
           wind and tide, with no emissions or waste products. Additionally, they
@@ -44,7 +44,7 @@ const Benefits = () => {
         <h1 className="text-2xl  text-slate-100 text-center px-2 leading-6 absolute left-10 uppercase">
           Improved Performance <br /> <span>and Reliability</span>
         </h1>
-        <p className="text-[#344966] font-serif font-semibold text-xl text-left  w-[70vw] px-5 absolute right-10">
+        <p className="text-[#000] font-serif font-semibold text-xl text-left  w-[70vw] px-5 absolute right-10">
           Underwater datacenters like Natick have proven to be more reliable
           than traditional land-based datacenters. The controlled underwater
           environment and the use of nitrogen instead of oxygen in the vessel
@@ -64,7 +64,7 @@ const Benefits = () => {
         <h1 className="text-2xl text-slate-100 text-center px-2 leading-6 absolute left-10 uppercase">
           Rapid Deployment
         </h1>
-        <p className="text-[#344966] font-serif font-semibold text-xl text-left  w-[70vw] px-5 absolute right-10">
+        <p className="text-[#000] font-serif font-semibold text-xl text-left  w-[70vw] px-5 absolute right-10">
           Natick datacenters can be deployed quickly, in less than 90 days,
           allowing for a fast response to market demand. This rapid provisioning
           is essential for businesses needing immediate scalability.
@@ -82,7 +82,7 @@ const Benefits = () => {
         <h1 className="text-2xl text-slate-100 text-center px-2 leading-6 absolute left-10  uppercase">
           Lower Latency
         </h1>
-        <p className="text-[#344966] font-serif font-semibold text-xl text-left  w-[70vw] px-5 absolute right-10">
+        <p className="text-[#000] font-serif font-semibold text-xl text-left  w-[70vw] px-5 absolute right-10">
           By placing datacenters close to coastal populations (where nearly half
           of the world's population lives), Natick reduces data travel time,
           thereby decreasing latency. This proximity enhances user experiences
@@ -102,7 +102,7 @@ const Benefits = () => {
         <h1 className="text-2xl text-slate-100 text-center px-2 leading-6 absolute left-10 uppercase">
           Resource Efficiency
         </h1>
-        <p className="text-[#344966] font-serif font-semibold text-xl text-left  w-[70vw] px-5 absolute right-10">
+        <p className="text-[#000] font-serif font-semibold text-xl text-left  w-[70vw] px-5 absolute right-10">
           The underwater environment offers natural cooling, eliminating the
           need for water or additional cooling resources. This results in lower
           energy consumption and a perfect water usage effectiveness (WUE) score

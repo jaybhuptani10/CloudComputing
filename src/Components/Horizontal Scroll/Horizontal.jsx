@@ -19,6 +19,8 @@ import WhyUnderWater from "./WhyUnderWater";
 import Phase2Timeline from "./Phase2Timeline";
 import Phase2Timeline2 from "./Phase2Timeline2";
 import Covid from "./Covid";
+import Conclusion from "./Conclusion";
+import Sustainable from "./Sustainable";
 
 const Horizontal = () => {
   const targetRef = useRef(null);
@@ -126,7 +128,10 @@ const Horizontal = () => {
           <div className="h-screen w-screen bg2" ref={covidRef} id="covid">
             <Covid />
           </div>
-          <div className="h-screen w-screen bg"> </div>
+          <div className="h-screen w-screen bg">
+            <Sustainable />
+          </div>
+          <div className="h-screen w-screen bg2"></div>
         </motion.div>
       </div>
     </div>

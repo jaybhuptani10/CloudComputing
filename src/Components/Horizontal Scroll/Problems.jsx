@@ -34,7 +34,7 @@ const Problems = () => {
         <h1 className="text-2xl text-slate-100 text-center px-2 leading-6 absolute top-20 uppercase">
           Environmental Factors
         </h1>
-        <p className="text-[#344966] font-serif font-semibold text-xl text-left px-5 absolute top-40">
+        <p className="text-[#000] font-serif font-semibold text-xl text-left px-5 absolute top-40">
           The marine environment presents unique challenges such as biofouling
           (marine organisms growing on the infrastructure), corrosion from
           saltwater, and pressure due to depth. These factors can degrade
@@ -59,7 +59,7 @@ const Problems = () => {
         <h1 className="text-2xl text-slate-100 text-center px-2 leading-6 absolute top-20 uppercase">
           Maintenance and Repairs
         </h1>
-        <p className="text-[#344966] font-serif font-semibold text-xl text-left px-5 absolute top-40">
+        <p className="text-[#000] font-serif font-semibold text-xl text-left px-5 absolute top-40">
           Since the data centers are underwater, they cannot be accessed for
           routine maintenance or emergency repairs. This necessitates highly
           reliable systems, as any failure could require a costly and
@@ -84,7 +84,7 @@ const Problems = () => {
         <h1 className="text-2xl text-slate-100 text-center px-2 leading-6 absolute top-20 uppercase">
           Power and Data Connectivity
         </h1>
-        <p className="text-[#344966] font-serif font-semibold text-xl text-left px-5 absolute top-40">
+        <p className="text-[#000] font-serif font-semibold text-xl text-left px-5 absolute top-40">
           The data centers require a stable power supply and high-speed data
           connections. Although renewable energy sources (like tidal and wind)
           can be used, ensuring consistent and reliable energy and connectivity
@@ -109,7 +109,7 @@ const Problems = () => {
         <h1 className="text-2xl text-slate-100 text-center px-2 leading-6 absolute top-20 w-1/2 uppercase">
           Logistics and Deployment
         </h1>
-        <p className="text-[#344966] font-serif font-semibold text-xl text-left px-5 absolute top-40">
+        <p className="text-[#000] font-serif font-semibold text-xl text-left px-5 absolute top-40">
           Deploying and recovering the data centers involves complex logistics.
           The deployment process must ensure the structure remains stable
           underwater and is securely connected to power and data networks.
@@ -133,7 +133,7 @@ const Problems = () => {
         <h1 className="text-2xl text-slate-100 text-center px-2 leading-6 absolute top-20 uppercase">
           Long-Term Viability
         </h1>
-        <p className="text-[#344966] font-serif font-semibold text-xl text-left px-5 absolute top-40">
+        <p className="text-[#000] font-serif font-semibold text-xl text-left px-5 absolute top-40">
           Understanding how these data centers perform over several years
           without maintenance is still a key question. The durability of the
           technology under long-term marine exposure remains uncertain.
