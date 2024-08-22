@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import img from "./Imgs/Phase-1.png";
 import img2 from "./Imgs/TURTLE.png";
+import Modal from "./Modal";
 const Phase1 = () => {
+  const [show, setShow] = useState(false);
   return (
     <div className="h-full w-full relative flex items-center justify-center">
       <img src={img2} className="absolute -top-10 h-96 w-96" alt="" />
@@ -14,6 +16,14 @@ const Phase1 = () => {
         NATICK PHASE 1
       </h1>
       <p className="text-[#344966] z-20  text-xl text-left  w-[50vw] px-5 absolute bottom-48 left-72">
+        {show && (
+          <Modal
+            IMG={
+              "https://news.microsoft.com/wp-content/uploads/prod/2018/05/Natick_Deployment_59-1920x1080.jpg"
+            }
+            setShow={setShow}
+          />
+        )}
         It all started in 2013 when Microsoft employee, Sean James, who served
         on a US Navy submarine submitted a ThinkWeek Paper. Norm Whitaker read
         the paper and built a team to explore the idea of placing computers or

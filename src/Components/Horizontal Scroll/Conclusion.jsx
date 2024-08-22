@@ -21,7 +21,7 @@ const Conclusion = () => {
         </div>
         <div className="w-[40%]"></div>
         <div className="text-left w-[60%] h-full  bg-blue-500">
-          <p className=" text-white text-l px-5">
+          <p className=" text-white text-l px-1">
             Project Natick Phase 2 has successfully demonstrated that underwater
             data centers can offer significant benefits in terms of
             sustainability, reliability, and efficiency. The submerged data

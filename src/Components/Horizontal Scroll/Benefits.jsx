@@ -12,7 +12,7 @@ const Benefits = () => {
   };
 
   return (
-    <div className="flex h-full w-full flex-wrap">
+    <div className="flex h-full w-full flex-wrap z-50">
       <motion.div
         className="h-1/5 w-full bg-[#FFB30F] bg-opacity-40 flex gap-5 flex-col items-center justify-center relative"
         custom={0}
@@ -54,17 +54,17 @@ const Benefits = () => {
       </motion.div>
 
       <motion.div
-        className="h-1/5 w-full bg-[#FFFFEA] bg-opacity-40 flex gap-5 flex-col items-center justify-center relative"
+        className="h-1/5 z-50 w-full bg-[#FFFFEA] bg-opacity-40 flex gap-5 flex-col items-center justify-center relative"
         custom={2}
         initial="hidden"
         whileInView="visible"
         variants={sectionVariants}
         viewport={{ once: true, amount: 0.5 }}
       >
-        <h1 className="text-2xl text-slate-100 text-center px-2 leading-6 absolute left-10 uppercase">
+        <h1 className="text-2xl z-50 text-slate-100 text-center px-2 leading-6 absolute left-10 uppercase">
           Rapid Deployment
         </h1>
-        <p className="text-[#000] font-serif font-semibold text-xl text-left  w-[70vw] px-5 absolute right-10">
+        <p className="text-[#000] z-50 font-serif font-semibold text-xl text-left  w-[70vw] px-5 absolute right-10">
           Natick datacenters can be deployed quickly, in less than 90 days,
           allowing for a fast response to market demand. This rapid provisioning
           is essential for businesses needing immediate scalability.

@@ -2,7 +2,7 @@ import React from "react";
 
 const WhyUnderWater = () => {
   return (
-    <div className="h-full w-full relative flex items-center justify-center">
+    <div className="h-full z-50 w-full relative flex items-center justify-center">
       <div className="h-[80vh] w-[80vw] bg-blue-950 bg-opacity-70 flex flex-col items-center p-5">
         <h1 className="text-2xl z-30 mt-7 text-slate-100 text-center px-2 leading-6 uppercase">
           Why Here?

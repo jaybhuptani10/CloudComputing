@@ -3,9 +3,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import Map from "./Map";
 import MSG from "./Imgs/MSG.png";
 import Page1 from "./Page1";
-import Page2 from "./Natick";
-import Page3 from "./Diff";
-import Page4 from "./Intro";
+
 import Natick from "./Natick";
 import Diff from "./Diff";
 import Intro from "./Intro";

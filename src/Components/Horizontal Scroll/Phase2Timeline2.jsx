@@ -16,15 +16,15 @@ const Phase2Timeline2 = () => {
 
   useEffect(() => {
     scrollYProgress.onChange((value) => {
-      if (scrollYProgress.get() >= 0.947) {
+      if (scrollYProgress.get() >= 0.744) {
         setVisible(5);
-      } else if (scrollYProgress.get() >= 0.942) {
+      } else if (scrollYProgress.get() >= 0.74) {
         setVisible(4);
-      } else if (scrollYProgress.get() >= 0.936) {
+      } else if (scrollYProgress.get() >= 0.735) {
         setVisible(3);
-      } else if (scrollYProgress.get() >= 0.93) {
+      } else if (scrollYProgress.get() >= 0.728) {
         setVisible(2);
-      } else if (scrollYProgress.get() >= 0.924) {
+      } else if (scrollYProgress.get() >= 0.724) {
         setVisible(1);
       } else {
         setVisible(0);
@@ -70,7 +70,7 @@ const Phase2Timeline2 = () => {
         <h1 className="text-2xl z-30  text-slate-100 text-center px-2 leading-6 uppercase">
           Deployment
         </h1>
-        <p className="text-white text-md text-left w-[20vw] ml-2 z-30">
+        <p className="text-white text-md text-left w-[20vw] ml-2 px-2 z-30">
           The Natick Phase 2 vessel, "Northern Isles", was deployed at the
           European Marine Energy Centre on June 1st, 2018.
         </p>
@@ -83,7 +83,7 @@ const Phase2Timeline2 = () => {
         <h1 className="text-2xl z-30 mt-2  text-slate-100 text-center px-2 leading-6 uppercase">
           Operations
         </h1>
-        <p className="text-white mt-5 text-md text-left w-[20vw] px-1 ml-1  z-30">
+        <p className="text-white mt-5 text-md text-left w-[20vw] px-3 ml-1  z-30">
           Natick Northern Isles was used by more than 18 groups inside Microsoft
         </p>
       </div>
@@ -113,6 +113,9 @@ const Phase2Timeline2 = () => {
           After more than 2 years at the bottom of the ocean, Natick Northern
           Isles was retrieved for analysis.
         </p>
+      </div>
+      <div className="absolute top-0 right-0 p-4 bg-white z-50">
+        <p>scrollYProgress: {scrollYProgress.get()}</p>
       </div>
     </div>
   );
