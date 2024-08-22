@@ -3,7 +3,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import Map from "./Map";
 import MSG from "./Imgs/MSG.png";
 import Page1 from "./Page1";
-
+import microsoft from "./Imgs/microsoft.png";
 import Natick from "./Natick";
 import Diff from "./Diff";
 import Intro from "./Intro";
@@ -45,17 +45,18 @@ const Horizontal = () => {
   const concluref = useRef(null);
 
   useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          if (entry.target.id === "empty") setCurrentSection(null);
-          else setCurrentSection(entry.target.id);
-          console.log(currentSection);
-        }
-      });
-    },
-    { threshold: 0.5 }
-  );
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            if (entry.target.id === "empty") setCurrentSection(null);
+            else setCurrentSection(entry.target.id);
+            console.log(currentSection);
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
 
     if (introRef.current) observer.observe(introRef.current);
     if (natickRef.current) observer.observe(natickRef.current);
@@ -85,9 +86,14 @@ const Horizontal = () => {
   // Debugging: Log scrollYProgress and x values
 
   return (
-    <div ref={targetRef} className="h-[200vh] relative bg-blue-900 ">
+    <div ref={targetRef} className="h-[500vh] relative bg-blue-900 ">
+      <div className="fixed top-[60vh] left-[42vw]">
+        <img src={microsoft} className="h-64 w-64 object-cover" alt="" />
+      </div>
       <div className="fixed bottom-48 left-32 z-20">
-        <h1 className="absolute left-4 top-4">{currentSection?currentSection:"Welcome"}</h1>
+        <h1 className="absolute left-4 top-4">
+          {currentSection ? currentSection : "Welcome"}
+        </h1>
         <img src={MSG} className="w-full h-20 object-cover z-100 " alt="" />
       </div>
       <div className="sticky top-0 h-screen flex items-center overflow-hidden">
@@ -97,7 +103,11 @@ const Horizontal = () => {
           <div className="h-screen w-screen bg"></div> */}
           {/* <div className="h-screen w-screen bg2"></div> */}
           <div className="h-screen w-screen bg" ref={emptyref} id="empty"></div>
-          <div className="h-screen w-screen bg2 z-40" ref={introRef} id="Introduction">
+          <div
+            className="h-screen w-screen bg2 z-40"
+            ref={introRef}
+            id="Introduction"
+          >
             <Intro />
           </div>
           <div className="h-screen w-screen bg" ref={natickRef} id="Overview">
@@ -150,16 +160,28 @@ const Horizontal = () => {
           >
             <Benefits />
           </div>
-          <div className="h-screen w-screen bg" ref={sustainref} id="Sustainable" >
+          <div
+            className="h-screen w-screen bg"
+            ref={sustainref}
+            id="Sustainable"
+          >
             <Sustainable />
           </div>
-          <div className="h-screen w-screen bg2" ref={problemsRef} id="Problems" >
+          <div
+            className="h-screen w-screen bg2"
+            ref={problemsRef}
+            id="Problems"
+          >
             <Problems />
           </div>
-          <div className="h-screen w-screen bg"ref={covidRef} id="Application">
+          <div className="h-screen w-screen bg" ref={covidRef} id="Application">
             <Covid />
           </div>
-          <div className="h-screen w-screen bg2" ref={concluref} id="Conclusion">
+          <div
+            className="h-screen w-screen bg2"
+            ref={concluref}
+            id="Conclusion"
+          >
             <Conclusion />
           </div>
           <div className="h-screen w-screen bg"></div>

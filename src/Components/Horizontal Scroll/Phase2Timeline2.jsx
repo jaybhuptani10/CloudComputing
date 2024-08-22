@@ -114,9 +114,6 @@ const Phase2Timeline2 = () => {
           Isles was retrieved for analysis.
         </p>
       </div>
-      <div className="absolute top-0 right-0 p-4 bg-white z-50">
-        <p>scrollYProgress: {scrollYProgress.get()}</p>
-      </div>
     </div>
   );
 };
