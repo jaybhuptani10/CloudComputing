@@ -86,15 +86,15 @@ const Horizontal = () => {
   // Debugging: Log scrollYProgress and x values
 
   return (
-    <div ref={targetRef} className="h-[500vh] relative bg-blue-900 ">
-      <div className="fixed top-[60vh] left-[42vw]">
+    <div ref={targetRef} className="h-[1000vh] relative bg-blue-900 ">
+      <div className="fixed  top-[60vh] left-[42vw]">
         <img src={microsoft} className="h-64 w-64 object-cover" alt="" />
       </div>
       <div className="fixed bottom-48 left-32 z-20">
-        <h1 className="absolute left-4 top-4">
+        <h1 className="absolute p-4">
           {currentSection ? currentSection : "Welcome"}
         </h1>
-        <img src={MSG} className="w-full h-20 object-cover z-100 " alt="" />
+        <img src={MSG} className="w-full h-24 object-cover z-100 " alt="" />
       </div>
       <div className="sticky top-0 h-screen flex items-center overflow-hidden">
         <motion.div style={{ x }} className="flex gap-0 z-40">
