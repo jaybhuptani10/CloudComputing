@@ -2,7 +2,7 @@ import React from "react";
 import background from "./Imgs/Page Design-2.png";
 const Diff = () => {
   return (
-    <div className="flex h-full items-center w-full relative">
+    <div className="flex h-full items-center  w-full relative">
       <img
         src={background}
         className="h-[84%] z-10 w-[70%] object-cover absolute  overflow-hidden"
